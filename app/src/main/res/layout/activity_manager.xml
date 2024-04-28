@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    tools:context=".Manager"
+    android:background="#5A5A5A"> <!-- Adjusted to light grey background -->
+
+    <TextView
+        android:id="@+id/textViewTypes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Types"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#448AFF"
+        android:paddingTop="32dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTypes"
+        android:text="Login"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:drawableLeft="@drawable/img_login"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/textViewCardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_login"
+        android:text="Card"
+        android:drawableLeft="@drawable/ic_card"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <!-- Identity Section -->
+    <TextView
+        android:id="@+id/textViewIdentityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCardTitle"
+        android:text="Identity"
+        android:drawableLeft="@drawable/ic_identity"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <!-- Secure Note Section -->
+    <TextView
+        android:id="@+id/textViewSecureNoteTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewIdentityTitle"
+        android:text="Secure note"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:drawableLeft="@drawable/ic_note"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+
+
+    <TextView
+        android:id="@+id/textViewFolders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSecureNoteTitle"
+        android:layout_marginTop="32dp"
+        android:text="Folders"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#448AFF" />
+
+    <TextView
+        android:id="@+id/textViewNoFolderCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewFolders"
+        android:text="No folder"
+        android:drawableLeft="@drawable/ic_folder"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <!-- Added space before "Bin" as requested -->
+    <TextView
+        android:id="@+id/textViewBin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewNoFolderCount"
+        android:layout_marginTop="32dp"
+        android:text="Bin"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#448AFF" />
+
+    <TextView
+        android:id="@+id/tv_Bins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewBin"
+        android:text="Bin"
+        android:drawableLeft="@drawable/ic_bin"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+</RelativeLayout>

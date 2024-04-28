@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+
+
+        <TextView
+            android:id="@+id/signupTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="34sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:textColor="#800080"/>
+
+
+
+        <EditText
+            android:id="@+id/et_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signupTextView"
+            android:layout_marginTop="16dp"
+            android:hint="Username:"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="text"/>
+
+
+        <EditText
+            android:id="@+id/et_login_pswd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_login_username"
+            android:layout_marginTop="16dp"
+            android:hint="Password:"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textPassword"/>
+
+
+
+
+        <!-- Signup Button -->
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_login_pswd"
+            android:layout_marginTop="32dp"
+            android:text="Login"
+            android:background="@drawable/rounded_button"/>
+
+        <!-- Title at the bottom -->
+        <TextView
+            android:id="@+id/tv_tosignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Signup"
+            android:layout_below="@id/btn_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+    </RelativeLayout>
+</ScrollView>
